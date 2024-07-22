@@ -1,0 +1,33 @@
+1.Visual Basic Code Fast (*) COMPLETE.
+2.GIT+GitHub (*) INPROG.
+3.JavaScript Moderno (*) NULL.
+4.React (Hooks and MERN) (*) NULL.(3)
+5.TypeScript (*) NULL.
+6.Node (JS in Server) (*) NULL. (5)
+
+REACT EXPERT
+1* JavaScript Moderno: Guía para dominar el lenguaje  (*) NULL.
+2. React: De cero a experto ( Hooks y MERN ) (*) NULL.
+3* TypeScript: tu completa guía y manual de mano (*) NULL.
+4. React Query: Un poderoso gestor de estado asíncrono (FREE)
+5. Zustand: Gestor de estado para React 
+6. React Native: Aplicaciones nativas para IOS y Android (ACTUALIZACION) (*)
+7. React Pro: Lleva tus bases al siguiente nivel
+8. Next.js - 12: Traditional Pages Router (ACTUALIZACION) (*)
+9* Node.JS: De cero a experto (*)
+10. React: Aplicaciones en tiempo real con Socket-io
+11* ReactiveX - RxJs: De cero hasta los detalles
+12* Docker: Guía práctica de uso para desarrolladores
+13* SQL de cero: Tu guía práctica con PostgreSQL (COMPLETE)
+13* PWA: Aplicaciones Web Progresivas, de cero a experto
+
+JAVA EXPERT
+1. JavaScript Moderno: Guía para dominar el lenguaje (*)
+2. TypeScript: tu completa guía y manual de mano (*)
+3. Node.JS: De cero a experto (*)
+4. ReactiveX – RxJs: De cero hasta los detalles
+5. Docker: Guía práctica de uso para desarrolladores
+6. SQL de cero: Tu guía práctica con PostgreSQL
+7. PWA: Aplicaciones Web Progresivas, de cero a experto
+
+

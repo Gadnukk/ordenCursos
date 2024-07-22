@@ -1,0 +1,203 @@
+<main> --HTML easier to read and help with Search Engine Optimization (SEO) and accessibility.
+<h1>   --Only one by page
+<img>  --Without a closing tag
+		<!--Atributes-->
+		src --link to the server, where are alocate the picture
+		alt --mesage if are problem with loading the image.
+<a>	  --URL 
+		<!--Atributes-->	
+		href --url
+		target = "_blank"    --Open web in a new tab (pagina)
+		target = "_self" 	 --By default  in the same tab
+		target = "_top"      --In the same tab , by f11 complete
+		target = "_parent"   --Open in the parent iframe
+		target = "framename" --Open web in iframename
+		
+<p>	  --Paragraph
+		<!--Nesting-->
+		--h1 and p are inside main tag, there are nested, we have to put a tab by nested element
+		<main>
+			<h1></h1>
+			<p></p>
+		</main>
+<ul>  --unorder list
+<ol>  --order list, there are numeric 1,2,3 etc...
+<li>  --list items, are nested in ul or ol
+<section> --separate content from future content
+<figure> --represent a self-content (contenido indepediente) and can associate a image  with a caption
+<figcaption> --Capation (subtitulo o pie de foto)
+<em>    --Less enfasis use in text
+<strong>--More enfasis use in text
+		<!--Nesting-->
+		<a href="www.google.com.ar">Click aqui</a>  --The text is the link
+		<a href="www.google.com.ar"><img src="local.host\Empresas\fotos\google.png" alt="Google Icon"></a> --The image is the link
+		<p>El siguiente enlace a <a href="www.google.com.ar">Click aqui</a></p>
+		<figure>
+		<img src="local.host.empress-png" alt="Test">
+		<figcaption>Pie de imagen</figcaption>
+		</figure>
+<form> --Collect data from user
+		<!--Atributes-->
+		action --Indicate where the info will be send url
+<input> --Without a closing tag like img, this is a way to collect info
+		<!--Atributes-->
+		type ="radio"
+		type ="checkbox"
+		type ="text"
+		name = "Nombre" --Give a name to the input
+		placeholder = "Name by behind" --Give a name behind in the field text 
+		required --Only the word , this is if cant skipe the info, and this is required
+		value --Value and name are submit or saved.
+		
+<button> --Create a button into the form , whitout any atribute then submit the form to the location specified in the form action 
+			Even though you added your button below the text input, they appear next to each other on the page
+		<!--Atributes-->
+		type="submit" --Por default is submit, by better specified the type.
+		
+<label> --Are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers)
+		  makes it so clicking the word cat also selects the corresponding radio button.
+		<!--Nesting-->
+		<input type="radio" id="idinput"> Texto --only can click the radio button
+		<label><input type="radio" id="idinput"> Texto2 </label> --Now can click the text and the button also selects.
+		<!--!!!!!!!Notice!!!!!!!!!!!!-->
+		Notice that both radio buttons can be selected at the same time.
+		To make it so selecting one radio button automatically deselects the other,
+		both buttons must have a name attribute with the same value.
+		<label><input type="radio" id="idinput1" name="seleccion"> Texto1 </label>
+		<label><input type="radio" id="idinput"  name="seleccion"> Texto2 </label>
+		If you select the Indoor radio button and submit the form, the form data for the button is based on its name and value attributes.
+		
+		--Another way to associate the input with the text ,is nested the text with the label tag and for atribute with the same value of id input.
+		<input type="checkbox" id="idinput"  name="seleccion"><label for="idinput"> Texto2 </label>
+		
+<fieldset> --representa un conjunto de controles en un formulario (form), opcionalmente agrupados bajo un mismo nombre, generalmente lo separa con un recuadro.
+<legend> --Title in the fieldset , and it show in the box , and is behind de open fieldset
+		<!--Nesting-->
+		<form action="Url de envio">
+			<fieldset>
+				<legend>Titulo del Fieldset</legend>
+				<label><input type="radio" id="idinput1" name="seleccion"> Texto1 </label>
+				<label><input type="radio" id="idinput"  name="seleccion"> Texto2 </label>
+			</fieldset>
+		</form>
+		
+		
+		
+<html>
+  <body>
+    <h1>CatPhotoApp</h1>
+    <main>
+      <section>
+        <h2>Cat Photos</h2>
+        <!-- TODO: Add link to cat photos -->
+        <p>Click here to view more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>.</p>
+        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      </section>
+      <section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>  
+        </figure>
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+        </figure>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <label><input id="indoor" type="radio"> Indoor</label>
+          <label><input id="outdoor" type="radio">Outdoor</label>
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
+
+--Learn HTML by Building a Cat Photo App
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>CatPhotoApp</title>
+  </head>
+  <body>
+    <main>
+      <h1>CatPhotoApp</h1>
+      <section>
+        <h2>Cat Photos</h2>
+        <!-- TODO: Add link to cat photos -->
+        <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      </section>
+      <section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>  
+        </figure>
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+        </figure>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+          </fieldset>
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      </p>
+    </footer>
+  </body>
+</html>
+
+--Learn Basic CSS by Building a Cafe Menu
+
+
+
+
